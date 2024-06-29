@@ -2,19 +2,10 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Button from '@mui/material/Button';
 import List from '@mui/material/List';
-import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
-import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail';
-import { useState } from 'react';
 import HomeIcon from '@mui/icons-material/Home';
 import Accordion from '@mui/material/Accordion';
-import AccordionActions from '@mui/material/AccordionActions';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
@@ -33,10 +24,15 @@ const servicesMenuItem = [
   {name:'Exibition'},{name:'Bars and Counters'},{name:'Flooring'},{name:'Foamex Printing'}
 ]
 
+const materialMenuItem = [
+  {name:'ACM'}, {name:'HIP'}, {name:'Foamex'},{name:'Canvas'},{name:'Acrylic'},
+  {name:'Correx'}
+  ]
+
 const memuItem = [
   {name:'Our Services', isAccordion:true,  data:servicesMenuItem},
   {name:'Case Studies', isAccordion:false,  data:null},
-  {name:'Material for sale', isAccordion:true,  data:servicesMenuItem},
+  {name:'Material for sale', isAccordion:true,  data:materialMenuItem},
   {name:'Gallery', isAccordion:false,  data:null},
   {name:'Contact us', isAccordion:false,  data:null},
 
@@ -45,16 +41,16 @@ const memuItem = [
 const HamburgerMenu = ({open,toggleDrawer}: Props) => {
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={()=>toggleDrawer()}>
-      <List>
+    <Box sx={{ width: 300 }} role="presentation" >
+      <List classes={{root:style.ListItem_root}}>
       <ListItem>
-        <div>
-        <img src='./southshore_logo.jpg' alt='company_logo' />
+        <div onClick={()=>toggleDrawer()}>
+        <img src='./southshore_logo.jpg' alt='company_logo' width='150px'  />
         </div>
       </ListItem>
       <ListItem>
-        <div>
-        <HomeIcon fontSize='small' />
+        <div className={style.item_div}>
+        <HomeIcon fontSize='medium' onClick={()=>toggleDrawer()} />
         </div>
       </ListItem>
 
@@ -77,15 +73,15 @@ const HamburgerMenu = ({open,toggleDrawer}: Props) => {
             aria-controls="panel1-content"
             id="panel1-header"
             classes={{
-              content:style.summary_content
+              root:style.summary_content
             }}
             >
             {menu.name}
             </AccordionSummary>
-            <AccordionDetails>
+            <AccordionDetails classes={{root:style.accordion_detail_root}}>
             {menu.data?.map((item,index)=>{
               return (
-                <p key={'service'+ index}>{item.name}</p>
+                <p onClick={()=>toggleDrawer()} key={'service'+ index}>{item.name}</p>
               )
             })}
             </AccordionDetails>
@@ -95,7 +91,7 @@ const HamburgerMenu = ({open,toggleDrawer}: Props) => {
         }else{
           return (
             <ListItem key={'menu'+ i}>
-            <div>
+            <div className={style.item_div} onClick={()=>toggleDrawer()}>
             {menu.name}
             </div>
             </ListItem>
@@ -111,7 +107,7 @@ const HamburgerMenu = ({open,toggleDrawer}: Props) => {
 
   return (
     <div className={style.hamburger_menu_container}>
-    <Drawer open={true} onClose={()=>toggleDrawer()}>
+    <Drawer open={open} onClose={()=>toggleDrawer()} classes={{paper:style.drawer_paper}}>
       {DrawerList}
     </Drawer>
   </div>

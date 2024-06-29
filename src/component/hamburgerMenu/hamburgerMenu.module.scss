@@ -1,14 +1,38 @@
 .hamburger_menu_container {
 
    
-
+    
     
 }
 
+.item_div{
+    border-bottom: 1px solid #000;
+    padding: 10px 10px 10px 10px;
+}
+
+.ListItem_root {
+   
+    li {
+        display: block;
+        padding: 10px 0px 0px 0px;
+
+    }
+}
+
 .accordion_region {
-    background-color: red;
     display: block;
    
+}
+
+.accordion_detail_root{
+    padding: 5px 0px;
+
+    p {
+        border-bottom: 1px solid #000;
+        padding: 10px;
+
+
+        }
 }
 
 .accordion{
@@ -24,6 +48,10 @@
 }
 
 .summary_content{
-    // background-color: blue;
+    padding: 0px 10px;
+    border-bottom: 1px solid #000;
 }
 
+.drawer_paper {
+    width: 300px;
+}

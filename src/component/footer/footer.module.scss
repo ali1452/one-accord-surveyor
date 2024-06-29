@@ -1,0 +1,16 @@
+.footer_container {
+
+    .footer_main {
+        display: flex;
+        justify-content:space-evenly;
+    }
+
+    .footer_bottom {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        background-color: #57b9a1;
+        color: #fff;
+        font-size: 15px;
+    }
+}

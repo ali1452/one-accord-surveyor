@@ -69,8 +69,8 @@ const Header = (props: Props) => {
         </div>
 
         </div>
-        <div  className={style.hamburger_icon} onClick={()=>toggle()}>
-        {opensideBar ? <CloseIcon  fontSize='large' /> : <MenuIcon fontSize='large' />}
+        <div  className={style.hamburger_icon}>
+        {opensideBar ? <CloseIcon  fontSize='large'  onClick={()=>toggle()} /> : <MenuIcon fontSize='large'  onClick={()=>toggle()} />}
         <HamburgerMenu open={opensideBar} toggleDrawer={toggle} />
         </div>
        
