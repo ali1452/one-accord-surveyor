@@ -1,0 +1,148 @@
+
+$orange:#F18324 ;
+
+.header_container {
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+
+    @media (max-width:1200px) {
+        justify-content: space-between;
+        padding: 20px 25px;
+        
+    }
+
+    .logo_wrap {
+        img {
+            width: 120px;
+        }
+    }
+
+    .menu_wrap{
+        display: flex;
+        gap:40px;
+        font-size: 18px;
+        align-items: center;
+        cursor: pointer;
+
+        @media (max-width:1200px) {
+            display: none;
+            
+        }
+
+       
+        .menu_item {
+            position: relative;
+
+            &:hover {
+                color: $orange;
+            }
+        }
+
+        .arrow_menu_item{
+            position: relative;
+
+            svg {
+                padding: 2px;
+                vertical-align: top;
+            }
+            
+
+            &:hover {
+                color: $orange;
+                .drowdown_box {
+                    display: block;
+                    color: #5e709d;;
+                    
+                }
+
+            }
+
+            .drowdown_box {
+                display: none;
+                position: absolute;
+
+                .dropdown {
+                  
+                    box-shadow: 0 30px 70px 0 rgba(41, 41, 43, 0.1);
+                    transition: all ease 0.15s;
+                    background-color: #fff !important;
+                    margin-top: 40px;
+                    width: 250px;
+        
+                    .dropdown_item{
+                        padding: 15px 30px;
+                        width: 250px;
+                        cursor: pointer;
+                        border-bottom: 1px solid #f8f9fa;
+
+                        &:hover {
+                            background-color: #daebed;
+                        }
+                    }
+        
+                }
+                
+            }
+
+         
+
+           
+
+          
+    
+
+            // &:hover {
+            //     color: orange;
+            // }
+        }
+
+        .contact_menu_item{
+            display: flex;
+            gap:10px;
+
+            &:hover {
+                color: orange;
+            }
+        }
+
+        .contact_menu_item_contact{
+            display: flex;
+            gap:10px;
+            align-items: center;
+
+            svg {
+                background-color: orange;
+                color: #fff;
+                width: 40px;
+                height: 40px;
+                padding: 5px;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: aqua;
+                }
+
+
+                }
+
+                &:hover {
+                    color: orange;
+                }
+
+        }
+    }
+
+    .hamburger_icon{
+        display: none;
+
+        @media (max-width:1200px) {
+            display: block;
+            cursor: pointer;
+            
+        };
+    }
+}
