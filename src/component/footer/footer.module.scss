@@ -1,8 +1,123 @@
+$theme_color:#daebed;
+$border_color:#57b9a1;
+$orange:#F18324 ;
+
 .footer_container {
+    background-color: $theme_color;
 
     .footer_main {
         display: flex;
         justify-content:space-evenly;
+        border-top: 1px solid $border_color;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+
+        @media (max-width:767px) {
+            display: block;
+            
+        }
+
+        .img_wrap {
+             @media (max-width:767px) {
+                display: flex;
+                justify-content: center;
+                
+             }
+        }
+
+
+        .icon_wrap {
+            display: flex;
+            gap:10px;
+            margin-top: 20px;
+            justify-content: center;
+
+            .icon_box  {
+                background-color: #fff;
+                padding: 10px;
+                border-radius: 25px;
+                cursor: pointer;
+            }
+        }
+
+        .quick_link_wrap  {
+
+            @media (max-width:767px) {
+                text-align: center;
+                
+            }
+
+            .quick_link_heading {
+
+                
+                font-size: 22px;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+
+                @media (max-width:767px) {
+                    margin-top: 40px;
+                    margin-bottom: 0px;
+                    
+                }
+            }
+
+            .quick_link_item {
+                padding: 15px 0px;
+                font-size: 18px;
+                cursor: pointer;
+
+                @media (max-width:767px) {
+                    padding: 10px 0px;
+                    font-size: 16px;
+                    
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                    text-decoration-color: $orange;
+                    text-decoration-thickness: 3px;
+                }
+
+            }
+        }
+
+        .contact_wrap  {
+
+            @media (max-width:767px) {
+                text-align: center;
+                
+            }
+            .contact_heading {
+                font-size: 22px;
+                margin-bottom: 30px;
+                text-transform: uppercase;
+
+                @media (max-width:767px) {
+                    margin-top: 40px;
+                    margin-bottom: 10px;
+                    
+                }
+
+            }
+
+            .contact_item {
+                padding: 15px 0px;
+                font-size: 18px;
+                cursor: pointer;
+
+                @media (max-width:767px) {
+                    padding: 10px 0px;
+                    font-size: 16px;
+                    
+                }
+                
+
+                &:hover {
+                    color: $border_color;
+                }
+            }
+        }
     }
 
     .footer_bottom {
@@ -12,5 +127,18 @@
         background-color: #57b9a1;
         color: #fff;
         font-size: 15px;
+
+        @media (max-width:767px) {
+            font-size: 12px;
+            
+        }
     }
+}
+
+.tooltip{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 0px;
+    padding: 3px;
 }
