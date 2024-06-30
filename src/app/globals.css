@@ -26,3 +26,7 @@
 h1 {
   font-size: 32px;
 }
+
+.main {
+  min-height: 71vh;
+}

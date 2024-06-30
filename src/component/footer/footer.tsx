@@ -43,26 +43,24 @@ const Footer = (props: Props) => {
                 Contact Us
               </p>
               <p className={style.contact_item}>
-               <Tooltip title="033343678228" classes={{tooltip:style.tooltip}}>
+               <Tooltip title="020 3740 9165" classes={{tooltip:style.tooltip}}>
                <>
-               <PhoneIcon />
-               033343678228
+               <PhoneIcon /> 020 3740 9165
                </>
                 </Tooltip> 
               </p>
               <p className={style.contact_item}>
-                <Tooltip title='info@Accord.com.uk' classes={{tooltip:style.tooltip}}> 
+                <Tooltip title='Info@1accord.co.uk' classes={{tooltip:style.tooltip}}> 
                 <>
-                <EmailIcon />
-                info@Accord.com.uk
+                <EmailIcon /> Info@1accord.co.uk
                 </>
                 </Tooltip>
               </p>
               <p className={style.contact_item}>
                 <Tooltip title='business location' classes={{tooltip:style.tooltip}}> 
                 <>
-                <PlaceIcon />Gravaline House, Wallingford<br/>
-                Road,London
+                <PlaceIcon /> ighlands House the Broadway,<br/>
+                London SW19 1NE
                 </>
                 </Tooltip>
               </p>
