@@ -1,96 +1,230 @@
 $theme_color:#daebed;
 $orange:#F18324;
 $border_color:#57b9a1;
+$heading_font:serif;
 
 .main_layout_container {
-    background-color: $theme_color;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 80px 0px;
-    flex-wrap: wrap;
 
-    .main_heading {
-        font-size: 42px;
-
-        @media (max-width:767px) {
-            font-size: 36px;
-            text-align: center;
-
-            br{
-                display: none;
-            }
-            
-        }
-    }
-
-    .btn_wrap {
+    .top_layout_container {
+        background-color: $theme_color;
         display: flex;
-        // flex-wrap: wrap;
-        gap: 20px;
-        margin-top: 20px;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 80px 0px;
+        flex-wrap: wrap;
+        gap: 10px;
+    
+        .main_heading {
+            font-size: 48px;
+            font-family: $heading_font;
+    
+            @media (max-width:767px) {
+                font-size: 36px;
+                text-align: center;
+    
+                br{
+                    display: none;
+                }
+                
+            }
+        }
+    
+        .btn_wrap {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+    
+            @media (max-width:767px) {
+                justify-content: center;
+                margin-bottom: 30px;
+                
+            }
+    
+            .service_btn {
+                font-size: 20px;
+                padding: 20px 30px;
+                color: #fff;
+                border-radius: 50px;
+                background-color: $orange;
+                cursor: pointer;
+    
+                @media (max-width:767px) {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    font-size: 12px
+                    
+                }
+    
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+    
+            }
+    
+            .enquiry_btn {
+                font-size: 20px;
+                padding: 20px 30px;
+                color: #fff;
+                border-radius: 50px;
+                background-color: #57b9a1;
+                cursor: pointer;
+    
+                @media (max-width:767px) {
+                    display: flex;
+                    align-items: center;
+                    padding: 10px;
+                    font-size: 12px;
+                    
+                }
+
+                &:hover {
+                    background-color: #fff;
+                    color: #000;
+                }
+
+                svg {
+                    font-size: 24px;
+
+                    @media (max-width:767px) {
+                        font-size: 16px;
+                        
+                    }
+                }
+    
+            }
+        }
+    
+        .image_wrap {
+            width: 100%;
+            max-width: 750px;
+    
+            @media (max-width:767px) {
+                max-width: 95%;
+                margin: auto;
+            }
+    
+            img {
+                border-radius: 20px;
+            }
+        }
+    
+    }
+
+    .swiper_container {
+
+    }
+
+    .print_station_contianer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 1250px;
+        margin: auto;
+        padding: 60px 0px;
+        align-items: center;
+        gap: 40px;
 
         @media (max-width:767px) {
-            justify-content: center;
-            margin-bottom: 30px;
+            display: block;
+            
+        }
+        
+
+        .text_container{
+            flex:1;
+
+            @media (max-width:767px) {
+                padding: 10px;
+                
+            }
+          
+            .print_heading {
+                font-size: 38px;
+                text-transform: uppercase;
+                font-family: $heading_font;
+                
+        
+                @media (max-width:767px) {
+                    font-size: 32px;
+                    text-align: center;
+        
+                    
+                }
+            }
+
+            .print_text {
+                padding: 10px 0px;
+                font-size: 18px;
+
+                @media (max-width:767px) {
+                    padding: 10px 20px;
+                    font-size: 16px;
+                    
+                }
+            }
+
+            .query_btn {
+                background-color: $orange;
+                border-radius: 35px;
+                text-align: center;
+                color: #fff;
+                padding: 18px 10px;
+                max-width: 220px;
+                margin-top: 40px;
+                cursor: pointer;
+
+                @media (max-width:767px) {
+                    width: 200px;
+                    padding: 14px 10px;
+                    
+                }
+
+            }
+
+        }
+
+        .image_container {
+            display: flex;
+            gap:20px;
+            flex: 1;
+            flex-wrap: wrap;
+
+            @media (max-width:767px) {
+                // display: block;
+                
+            }
+
+
+            .image_box {
+                width: calc(50% - 20px);
+                border: 1px solid #000;
+                border-radius: 5px;
+                text-align: center;
+                cursor: pointer;
+
+                @media (max-width:767px) {
+                    margin: auto;
+                    width: auto;
+                    
+                }
+
+                img {
+                    border-radius: 5px;
+                }
+
+                .img_bottom_text {
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    padding: 10px;
+                }
+            }
+
             
         }
 
-        .service_btn {
-            font-size: 20px;
-            padding: 20px;
-            color: #fff;
-            border-radius: 50px;
-            background-color: $orange;
-            cursor: pointer;
-
-            @media (max-width:767px) {
-                padding: 10px;
-                font-size: 16px;
-                
-            }
-
-            &:hover {
-                background-color: #fff;
-                color: #000;
-            }
-
-        }
-
-        .enquiry_btn {
-            font-size: 20px;
-            padding: 20px;
-            color: #fff;
-            border-radius: 50px;
-            background-color: #57b9a1;
-            cursor: pointer;
-
-            @media (max-width:767px) {
-                padding: 10px;
-                font-size: 16px
-                
-            }
-
-            &:hover {
-                background-color: #fff;
-                color: #000;
-            }
-
-        }
-    }
-
-    .image_wrap {
-        width: 100%;
-        max-width: 750px;
-
-        @media (max-width:767px) {
-            max-width: 95%;
-            margin: auto;
-        }
-
-        img {
-            border-radius: 20px;
-        }
     }
 
 }
+
