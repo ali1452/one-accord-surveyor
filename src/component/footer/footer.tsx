@@ -7,6 +7,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
 import Tooltip from '@mui/material/Tooltip';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 type Props = {}
 
@@ -73,6 +74,11 @@ const Footer = (props: Props) => {
 
         </div>
     <p className={style.footer_bottom}>© 2024 One Accord Surveyor . All Rights Reserved.</p>
+    <div className={style.whatup}>
+    <span className={style.what_up_text}>whatsapp</span>
+    <span className={style.what_up_icon}><WhatsAppIcon /></span>
+    </div>
+      
     </div>
   )
 }

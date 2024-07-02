@@ -4,6 +4,7 @@ $orange:#F18324 ;
 
 .footer_container {
     background-color: $theme_color;
+   
 
     .footer_main {
         display: flex;
@@ -12,6 +13,7 @@ $orange:#F18324 ;
         padding-top: 40px;
         padding-bottom: 40px;
         flex-wrap: wrap;
+        font-weight: 600 !important;
 
         @media (max-width:767px) {
             display: block;
@@ -131,6 +133,40 @@ $orange:#F18324 ;
         @media (max-width:767px) {
             font-size: 12px;
             
+        }
+    }
+
+    .whatup {
+        position: fixed;
+        bottom: 100px;
+        right: 40px;
+        cursor: pointer;
+        display: inline-block;
+
+        @media (max-width) {
+            bottom: 120px;
+            
+        }
+        
+
+        .what_up_text {
+            background-color: #25d366;
+            color: #fff;
+            padding: 8px;
+            border-radius: 16px;
+            font-size: 14px;
+            margin-right: 20px;
+           
+            }
+        .what_up_icon {
+            padding: 20px;
+            background-color: #25d366;
+            border-radius: 20px 20px 0px 20px;
+
+            svg {
+                color: #fff;
+
+            }
         }
     }
 }

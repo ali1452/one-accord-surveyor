@@ -218,12 +218,125 @@ $heading_font:serif;
                     text-transform: uppercase;
                     font-size: 20px;
                     padding: 10px;
+                    font-family: serif;
                 }
             }
 
             
         }
 
+    }
+
+    .journey_container {
+        width: 100%;
+        // max-width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        .journey_heading {
+            text-align: center;
+            font-family: serif;
+            font-size: 36px;
+            text-transform: uppercase;
+
+            @media (max-width:767px) {
+                font-size: 22px;
+                
+            }
+           
+        }
+
+       
+
+        .journey_image_wrap {
+            display: flex;
+            justify-content: center;
+            gap:20px;
+
+            @media (max-width:767px) {
+                flex-wrap: wrap;
+                
+            }
+
+            .img_box {
+                
+                img {
+                    border-radius: 20px;
+                }
+            }
+        }
+
+    }
+
+    .technology_container {
+        background-color: $theme_color;
+        padding: 60px 0px;
+
+        .technology_heading {
+            text-align: center;
+            font-family: serif;
+            font-size: 36px;
+            text-transform: capitalize;
+            
+            @media (max-width:767px) {
+                font-size: 22px;
+                
+            }
+
+           
+        }
+
+        .technology_wrap {
+            display: flex;
+            justify-content: center;
+            gap:20px;
+            flex-wrap: wrap;
+
+            .technology_box {
+                border-radius: 20px;
+                width: 300px;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .box_text {
+                    text-transform: uppercase;
+                    font-family: serif;
+                    font-size: 26px;
+                    width: 80%;
+                    text-align: center;
+
+                }
+            }
+        }
+    }
+
+    .dot_box {
+        display: flex;
+        justify-content: center;
+        gap:10px;
+        margin-bottom: 30px;
+
+        :nth-child(1){
+            background-color: #57b9a1;
+        }
+
+        :nth-child(2){
+            background-color: #28282b;
+        }
+
+        :nth-child(3){
+            background-color: $orange;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 10px;
+        }
     }
 
 }

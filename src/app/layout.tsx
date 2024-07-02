@@ -4,7 +4,7 @@ import "./globals.css";
 import Header from "@/component/header/header";
 import Footer from "@/component/footer/footer";
 
-const poppins =  Poppins({weight:'400', subsets: ['latin'] })
+const poppins =  Poppins({weight:'200', subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "One Accord Surveyors",
