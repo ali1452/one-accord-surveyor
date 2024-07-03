@@ -8,16 +8,29 @@ $orange:#F18324 ;
     font-size: 16px;
     font-weight: 400;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
 
     @media (max-width:1200px) {
         justify-content: space-between;
         padding: 20px 25px;
+
+        @media (max-width:767px) {
+            padding: 10px 25px;
+            
+        }
         
     }
 
     .logo_wrap {
         img {
             width: 120px;
+
+            @media (max-width:767px) {
+                width: 70px;
+                
+            }
         }
     }
 
@@ -27,6 +40,7 @@ $orange:#F18324 ;
         font-size: 18px;
         align-items: center;
         cursor: pointer;
+        font-weight: 600;
 
         @media (max-width:1200px) {
             display: none;

@@ -143,6 +143,11 @@ $orange:#F18324 ;
         cursor: pointer;
         display: inline-block;
 
+        @media (max-width:767px) {
+            display: none;
+            
+        }
+
         @media (max-width) {
             bottom: 120px;
             

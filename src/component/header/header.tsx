@@ -29,7 +29,7 @@ const Header = (props: Props) => {
   return (
     <div className={style.header_container}>
         <div className={style.logo_wrap}>
-          <img src='./southshore_logo.jpg' alt='company_logo' />
+          <img src='./one-accord-logo.jpeg' alt='company_logo' />
         </div>
         <div className={style.menu_wrap}>
         <div className={style.menu_item}>
