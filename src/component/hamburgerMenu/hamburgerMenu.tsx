@@ -45,7 +45,7 @@ const HamburgerMenu = ({open,toggleDrawer}: Props) => {
       <List classes={{root:style.ListItem_root}}>
       <ListItem>
         <div onClick={()=>toggleDrawer()}>
-        <img src='./southshore_logo.jpg' alt='company_logo' width='150px'  />
+        <img src='./one-accord-logo.jpeg' alt='company_logo' width='150px'  />
         </div>
       </ListItem>
       <ListItem>
