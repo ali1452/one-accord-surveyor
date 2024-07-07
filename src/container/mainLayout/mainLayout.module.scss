@@ -53,7 +53,7 @@ $heading_font:serif;
     
             .service_btn {
                 font-size: 20px;
-                padding: 20px 30px;
+                padding: 10px 30px;
                 color: #fff;
                 border-radius: 50px;
                 background-color: $orange;
@@ -76,7 +76,7 @@ $heading_font:serif;
     
             .enquiry_btn {
                 font-size: 20px;
-                padding: 20px 30px;
+                padding: 10px 30px;
                 color: #fff;
                 border-radius: 50px;
                 background-color: #57b9a1;
@@ -152,7 +152,7 @@ $heading_font:serif;
             }
           
             .print_heading {
-                font-size: 38px;
+                font-size: 32px;
                 text-transform: uppercase;
                 font-family: $heading_font;
                 
@@ -181,14 +181,14 @@ $heading_font:serif;
                 border-radius: 35px;
                 text-align: center;
                 color: #fff;
-                padding: 18px 10px;
+                padding: 12px 10px;
                 max-width: 220px;
                 margin-top: 40px;
                 cursor: pointer;
 
                 @media (max-width:767px) {
                     width: 200px;
-                    padding: 14px 10px;
+                    // padding: 14px 10px;
                     
                 }
 

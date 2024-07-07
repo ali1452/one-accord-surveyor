@@ -22,8 +22,8 @@ const station_service_data = [
 ]
 
 const journeyData = [
-  {url:'https://printstation.co.uk/wp-content/uploads/2023/03/image_1.jpg', text:'design'},{url:'https://printstation.co.uk/wp-content/uploads/2023/03/image_2.jpg', text:'print'},
-  {url:'https://printstation.co.uk/wp-content/uploads/2023/03/image_3.jpg', text:'install'}
+  {url:'https://printstation.co.uk/wp-content/uploads/2023/03/image_1.jpg', text:'Appointment Booking'},{url:'https://printstation.co.uk/wp-content/uploads/2023/03/image_2.jpg', text:'Representative Confirmation'},
+  {url:'https://printstation.co.uk/wp-content/uploads/2023/03/image_3.jpg', text:'Certificate Delivery'}
                     ]
 
 const technology_data = [
@@ -57,12 +57,12 @@ const MainLayout = (props: Props) => {
     <div className={style.print_station_contianer}>
       <div className={style.text_container}>
         <p className={style.print_heading}>
-          Print Station Services
+          One Accord Surveyors Services
         </p>
         <p className={style.print_text}>
-        Our team of experienced professionals is dedicated to helping you create the perfect printed materials for your business or event. Whether you need  
-        signage, exhibition prints, site hoarding prints, banners, wallpapers or anything in between, we can help. We offer a wide variety of solutions, including 
-        digital UV printing, design and digital cutting services.
+          We are dedicated to providing government recognized services in property certifications and project management. Whether you are a landlord in need of 
+          certifications or looking to manage a construction or refurbishment project, we have the expertise and experience to help you achieve your goals. Our 
+          commitment to quality and customer satisfaction sets us apart in the industry. Explore our services to see how we can assist you.
         </p>
         <p className={style.query_btn}>
         <PhoneIcon /> Make an enquiry</p>
@@ -82,7 +82,7 @@ const MainLayout = (props: Props) => {
       </div>
     </div>
     <div className={style.journey_container}>
-      <p className={style.journey_heading}>Your Journey with print station </p>
+      <p className={style.journey_heading}>Your Journey with One Accord Surveyors </p>
       <div className={style.dot_box}>
         <p className={style.dot}></p>
         <p className={style.dot}></p>
@@ -99,7 +99,7 @@ const MainLayout = (props: Props) => {
 
     </div>
     <div className={style.technology_container}>
-    <p className={style.technology_heading}>We Provide High Quality Print Using The Latest In Print Technology</p>
+    <p className={style.technology_heading}>We Provide High Quality Services Using The Latest Technology</p>
       <div className={style.dot_box}>
         <p className={style.dot}></p>
         <p className={style.dot}></p>
