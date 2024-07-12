@@ -40,7 +40,7 @@ const MainLayout = (props: Props) => {
     <div className={style.top_layout_container}>
         <div>
             <p className={style.main_heading}>
-            Specialist in Large<br/> Format Print for the<br/> Commercial Sector
+            Specialist in Large<br/> Construction for the<br/> Commercial Sector
             </p>
             <div className={style.btn_wrap}>
                 <p className={style.service_btn}>Our Services</p>

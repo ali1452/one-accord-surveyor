@@ -7,6 +7,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
+import Link from 'next/link';
 
 type Props = {}
 
@@ -65,7 +66,9 @@ const Header = (props: Props) => {
         <p className={style.menu_item}>Gallery</p>
         <p className={style.menu_item}>Contact us</p>
         <div className={style.contact_menu_item_contact}>
+        <Link href="tel:020 3740 9165">
         <CallIcon />
+        </Link>
         </div>
 
         </div>
