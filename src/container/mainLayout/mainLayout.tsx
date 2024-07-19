@@ -40,7 +40,7 @@ const MainLayout = (props: Props) => {
     <div className={style.top_layout_container}>
         <div>
             <p className={style.main_heading}>
-            Specialist in Large<br/> Construction for the<br/> Commercial Sector
+            Specialist in Large<br/> printing services for the<br/> Commercial Sector
             </p>
             <div className={style.btn_wrap}>
                 <p className={style.service_btn}>Our Services</p>
@@ -88,6 +88,19 @@ const MainLayout = (props: Props) => {
         <p className={style.dot}></p>
         <p className={style.dot}></p>
       </div>
+      <div className={style.journey_text}>
+        <p>
+          Appointment Booking: Begin your journey by scheduling an appointment with us through our user-friendly online booking system. Simply select a convenient time and provide us with some basic information about your needs.
+          Representative Confirmation: Once your appointment is booked, one of our representatives will contact you to confirm the details and process your payment securely.
+          Certificate Delivery: Following your appointment, you will receive your certification within 2 working days, ensuring you stay compliant with all legal requirements.
+        </p>
+        <p>
+        Representative Confirmation: Once your appointment is booked, one of our representatives will contact you to confirm the details and process your payment securely.
+        </p>
+        <p>
+        Certificate Delivery: Following your appointment, you will receive your certification within 2 working days, ensuring you stay compliant with all legal requirements.
+        </p>
+      </div>
       <div className={style.journey_image_wrap}>
         {journeyData.map((item,index)=>{
           return (
@@ -96,6 +109,37 @@ const MainLayout = (props: Props) => {
         })}
           
       </div>
+
+    </div>
+    <div className={style.choose_wrap}>
+      <p className={style.choose_heading}>Why Choose Us</p>
+      <p>
+      Number of Successful Surveys: We have conducted over 4,000+ successful surveys, 
+      providing property owners with detailed insights and actionable recommendations.
+      </p>
+      <p>
+      Number of Successful Surveys: We have conducted over 4,000+ successful surveys, 
+      providing property owners with detailed insights and actionable recommendations.
+      </p>
+      <p>
+      Number of Projects Over £100k GBP: We have managed 7+ projects over £100,000, 
+      delivering high-quality results on time and within budget.
+      </p>
+      <p>
+      Explore our services to find out more about how we can assist you with your property needs.
+      </p>
+    </div>
+    <div className={style.choose_wrap}>
+      <p className={style.choose_heading}>Our Mission</p>
+      <p>
+      To provide exceptional service that exceeds our clients' expectations through professionalism, 
+      innovation, and a commitment to excellence.
+      </p>
+      <p className={style.choose_heading}>Our Vision</p>
+      <p>
+      To be the trusted partner for property owners and managers, recognized for our expertise, integrity, 
+      and customer-focused approach.
+      </p>
 
     </div>
     <div className={style.technology_container}>

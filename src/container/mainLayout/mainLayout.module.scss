@@ -258,6 +258,24 @@ $heading_font:serif;
            
         }
 
+        .journey_text {
+            width: 100%;
+            max-width: 65%;
+            margin: auto;
+            color: #000;
+            padding: 20px 10px;
+
+            @media (max-width:767px) {
+                max-width: 80%;
+                padding: 10px 0px;
+                
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
        
 
         .journey_image_wrap {
@@ -278,6 +296,29 @@ $heading_font:serif;
             }
         }
 
+    }
+
+    .choose_wrap{
+        max-width: 65%;
+        margin: auto;
+        padding: 10px;
+        margin-bottom: 10px;
+
+        @media (max-width:767px) {
+            max-width: 80%;
+            
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        .choose_heading {
+            font-family: serif;
+            font-size: 32px;
+            font-weight: 400;
+            text-align: center;
+        }
     }
 
     .technology_container {
