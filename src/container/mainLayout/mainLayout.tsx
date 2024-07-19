@@ -114,15 +114,15 @@ const MainLayout = (props: Props) => {
     <div className={style.choose_wrap}>
       <p className={style.choose_heading}>Why Choose Us</p>
       <p>
-      Number of Successful Surveys: We have conducted over 4,000+ successful surveys, 
+      <span className={style.bold_txt}>Number of Successful Surveys:</span> We have conducted over 4,000+ successful surveys, 
       providing property owners with detailed insights and actionable recommendations.
       </p>
       <p>
-      Number of Successful Surveys: We have conducted over 4,000+ successful surveys, 
+      <span className={style.bold_txt}>Number of Successful Surveys:</span> We have conducted over 4,000+ successful surveys, 
       providing property owners with detailed insights and actionable recommendations.
       </p>
       <p>
-      Number of Projects Over £100k GBP: We have managed 7+ projects over £100,000, 
+      <span className={style.bold_txt}>Number of Projects Over £100k GBP:</span> We have managed 7+ projects over £100,000, 
       delivering high-quality results on time and within budget.
       </p>
       <p>

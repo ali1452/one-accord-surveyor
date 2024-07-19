@@ -30,14 +30,20 @@ const Header = (props: Props) => {
   return (
     <div className={style.header_container}>
         <div className={style.logo_wrap}>
+          <Link href='/'>
           <img src='./one-accord-logo.jpeg' alt='company_logo' />
+          </Link>
         </div>
         <div className={style.menu_wrap}>
         <div className={style.menu_item}>
+        <Link href='/'>
         <HomeIcon />
+        </Link>
         </div>
         <div className={style.arrow_menu_item}>
+          <Link href='/services'>
           Our Services
+          </Link>
           <span><KeyboardArrowDownIcon /></span>
           <div className={style.drowdown_box}>
           <div className={style.dropdown}>

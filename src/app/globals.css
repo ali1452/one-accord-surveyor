@@ -29,5 +29,10 @@ h1 {
 
 .main {
   min-height: 71vh;
-  padding-top: 120px;
+  padding-top: 125px;
+
+  @media (max-width:767px) {
+    padding-top: 90px;
+    
+  }
 }

@@ -10,6 +10,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import style from './hamburgerMenu.module.scss'
+import Link from 'next/link';
 
 
 type Props = {
@@ -20,13 +21,13 @@ type Props = {
 
 
 const servicesMenuItem = [
-  {name:'In House Design'}, {name:'Hoarding Boards'}, {name:'Banners'},{name:'Signage & Wayfinding'},{name:'Commercial'},
-  {name:'Exibition'},{name:'Bars and Counters'},{name:'Flooring'},{name:'Foamex Printing'}
+  {name:'In House Design', url:'/services' }, {name:'Hoarding Boards', url:'/services'}, {name:'Banners', url:'/services'},{name:'Signage & Wayfinding', url:'/services'},{name:'Commercial', url:'/services'},
+  {name:'Exibition', url:'/services'},{name:'Bars and Counters', url:'/services'},{name:'Flooring', url:'/services'},{name:'Foamex Printing', url:'/services'}
 ]
 
 const materialMenuItem = [
-  {name:'ACM'}, {name:'HIP'}, {name:'Foamex'},{name:'Canvas'},{name:'Acrylic'},
-  {name:'Correx'}
+  {name:'ACM',url:'/'}, {name:'HIP',url:'/'}, {name:'Foamex',url:'/'},{name:'Canvas',url:'/'},{name:'Acrylic',url:'/'},
+  {name:'Correx',url:'/'}
   ]
 
 const memuItem = [
@@ -50,7 +51,9 @@ const HamburgerMenu = ({open,toggleDrawer}: Props) => {
       </ListItem>
       <ListItem>
         <div className={style.item_div}>
+        <Link href='/'>
         <HomeIcon fontSize='medium' onClick={()=>toggleDrawer()} />
+        </Link>
         </div>
       </ListItem>
 
@@ -81,7 +84,7 @@ const HamburgerMenu = ({open,toggleDrawer}: Props) => {
             <AccordionDetails classes={{root:style.accordion_detail_root}}>
             {menu.data?.map((item,index)=>{
               return (
-                <p onClick={()=>toggleDrawer()} key={'service'+ index}>{item.name}</p>
+                <Link href={item.url} key={'service'+ index}><p onClick={()=>toggleDrawer()}>{item.name}</p></Link>
               )
             })}
             </AccordionDetails>

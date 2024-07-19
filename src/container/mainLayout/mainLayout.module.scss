@@ -4,12 +4,7 @@ $border_color:#57b9a1;
 $heading_font:serif;
 
 .main_layout_container {
-    padding-top: 70px;
-
-    @media (max-width:767px) {
-        padding-top: 0px;
-        
-    }
+    color: #000;
 
     .top_layout_container {
         background-color: $theme_color;
@@ -311,6 +306,11 @@ $heading_font:serif;
 
         p {
             margin-bottom: 10px;
+        }
+
+        .bold_txt {
+            font-weight: 600;
+        
         }
 
         .choose_heading {
