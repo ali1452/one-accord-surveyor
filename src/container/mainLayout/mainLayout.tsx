@@ -132,7 +132,7 @@ const MainLayout = (props: Props) => {
     <div className={style.choose_wrap}>
       <p className={style.choose_heading}>Our Mission</p>
       <p>
-      To provide exceptional service that exceeds our clients' expectations through professionalism, 
+      To provide exceptional service that exceeds our clients&apos; expectations through professionalism, 
       innovation, and a commitment to excellence.
       </p>
       <p className={style.choose_heading}>Our Vision</p>
