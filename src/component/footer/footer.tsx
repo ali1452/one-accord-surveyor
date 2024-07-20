@@ -45,9 +45,9 @@ const Footer = (props: Props) => {
                 Contact Us
               </p>
               <p className={style.contact_item}>
-               <Tooltip title="020 3740 9165" classes={{tooltip:style.tooltip}}>
+               <Tooltip title="+44 020 3740 9165" classes={{tooltip:style.tooltip}}>
                <>
-               <PhoneIcon /> 020 3740 9165
+               <PhoneIcon /> +44 020 3740 9165
                </>
                 </Tooltip> 
               </p>
@@ -75,7 +75,7 @@ const Footer = (props: Props) => {
 
         </div>
     <p className={style.footer_bottom}>© 2024 One Accord Surveyor . All Rights Reserved.</p>
-    <Link href="https://wa.me/02037409165" legacyBehavior>
+    <Link href="https://wa.me/+4402037409165" legacyBehavior>
     <a target='_blank'>
     <div className={style.whatup}>
     <span className={style.what_up_text}>whatsapp</span>
